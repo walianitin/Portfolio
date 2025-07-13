@@ -1,13 +1,16 @@
+"use client"
 import { FaHome, FaCode, FaBlog, FaGithub, FaLinkedin, FaTwitter, FaFileAlt } from "react-icons/fa";
-
 export default function Navbar() {
+
+
   return (
     <>
     <div className="flex flex-row justify-center items-center sticky top-6">
-      <div className="rounded-md p-4 shadow-sm shadow-foreground opacity-50 bg-blend-color-burn w-fit backdrop-blur-md">
+      <div className="rounded-md p-4 shadow-sm shadow-foreground opacity-90 bg-blend-color-burn w-fit backdrop-blur-3xl">
         <ul className="flex gap-10 pl-45 pr-45 text-md">
           <li className="hover:text-2xl duration-300 relative group">
               <FaHome title="Home" />
+              <a href="/" className="hover:bg-gradient-to-l"></a>
             <span className="absolute left-1/2 -translate-x-1/2 mt-2 px-2 py-1 rounded-sm bg-gray-800 text-white text-xs opacity-0 group-hover:opacity-100 duration-300">
               Home
             </span>

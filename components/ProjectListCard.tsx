@@ -55,6 +55,7 @@ export default function ProjectCardList(){
 
         return (
           <>
+            <h1 className=" text-4xl font-stretch-125% mb-5 "> Prof of Work</h1>
             <div className="grid grid-cols-2 gap-4 w-[50rem]">
               {data.slice(0,visibleProjects).map((project, index) => (
                 <ProjectCard

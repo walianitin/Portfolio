@@ -1,12 +1,9 @@
 'use client'
 
 import { MagicCard } from '@/components/magicui/magic-card'
-
 import {  GitHubLogoIcon} from '@radix-ui/react-icons'
-
 import Image from 'next/image'
 import { MdOnlinePrediction } from "react-icons/md";
-
 
 interface Project{  
     title: string;
@@ -18,9 +15,7 @@ interface Project{
 }   
 
 const ProjectCard = (props: Project) => {
-    // const { isDarkMode } = useDarkMode()
-    // Add styles to make the <a> tag expand and fill available space
-    // Example: flex-grow for the first <a>
+  
     return (
         <MagicCard gradientSize={250} gradientColor='cyan'gradientOpacity={0.2} className='h-full  relative group  w-full bg-neutral-600 rounded-sm inset-shadow-neutral flex flex-row gap-2 p-4  '>
             <Image src={props.logo} alt={props.title} width={64} height={64} className="rounded-sm mb-2" />

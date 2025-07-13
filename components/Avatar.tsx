@@ -1,17 +1,9 @@
 
-import { Link, Avatar as Picture } from '@radix-ui/themes'
+import Image from 'next/image'
 
 export default  function Avatar() {
   return (
-    <Link href='https://x.com/intent/follow?screen_name=walia_niti37420' target='_blank'>
-      <Picture
-        src='/dog.jpeg'
-        fallback="A"
-        size='8'
-        radius='full'
-        variant='soft' 
-      />
-    </Link>
+      <Image src={"/logo.png"} height={30 } width={30} alt='logo' className='bg-red-600'></Image>
   )
 }
 
