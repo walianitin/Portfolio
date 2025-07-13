@@ -1,8 +1,16 @@
 "use client";
 import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
+interface Project {
+  logo: string;
+  title: string;
+  description: string;
+  techStack: string[];
+  link: string;
+  source: string;
+}
 
-const data:any[] = [
+const data:Project[] = [
   {
     logo: '/saloon-5.png',
     title: "Enrich Salon Management",
