@@ -6,9 +6,7 @@ export default function Navbar() {
       <div className="rounded-md p-4 shadow-sm shadow-foreground opacity-50 bg-blend-color-burn w-fit backdrop-blur-md">
         <ul className="flex gap-10 pl-45 pr-45 text-md">
           <li className="hover:text-2xl duration-300 relative group">
-            <a href="/" className="hover:bg-gradient-to-l">
               <FaHome title="Home" />
-            </a>
             <span className="absolute left-1/2 -translate-x-1/2 mt-2 px-2 py-1 rounded-sm bg-gray-800 text-white text-xs opacity-0 group-hover:opacity-100 duration-300">
               Home
             </span>
