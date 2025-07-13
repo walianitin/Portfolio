@@ -2,7 +2,8 @@ import { FaHome, FaCode, FaBlog, FaGithub, FaLinkedin, FaTwitter, FaFileAlt } fr
 
 export default function Navbar() {
   return (
-    <div className="flex flex-row justify-center items-center sticky top-10">
+    <>
+    <div className="flex flex-row justify-center items-center sticky top-6">
       <div className="rounded-md p-4 shadow-sm shadow-foreground opacity-50 bg-blend-color-burn w-fit backdrop-blur-md">
         <ul className="flex gap-10 pl-45 pr-45 text-md">
           <li className="hover:text-2xl duration-300 relative group">
@@ -28,9 +29,9 @@ export default function Navbar() {
             </span>
           </li>
           <li className="hover:text-2xl duration-300 relative group">
-            <a href="/resume" className="hover:bg-gradient-to-l">
-              <FaFileAlt title="Resume" />
-            </a>
+            <a href="https://drive.google.com/uc?export=download&id=1aBZKhXQsjqIAsTI4FC8uDdOoYCpCbpox" download="NITIN_RESUME.pdf" className="hover:bg-gradient-to-l">
+  <FaFileAlt title="Resume" />
+</a>
             <span className="absolute left-1/2 -translate-x-1/2 mt-2 px-2 py-1 rounded-sm bg-gray-800 text-white text-xs opacity-0 group-hover:opacity-100 duration-300">
               Resume
             </span>
@@ -62,5 +63,6 @@ export default function Navbar() {
         </ul>
       </div>
     </div>
+    </>
   );
 }

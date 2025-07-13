@@ -74,7 +74,7 @@ export default function ProjectCardList(){
                 <div className="w-fit flex flex-col items-center mt-4">
                   <button
                     onClick={loadMoreProjects}
-                    className="relative bg-black rounded-lg text-sm text-white p-2 cursor-pointer shadow-sm"
+                    className="relative bg-black rounded-lg text-sm text-white p-2 cursor-pointer shadow-sm m-5"
                   >
                     Load More
                   </button>

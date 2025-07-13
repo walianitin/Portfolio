@@ -7,7 +7,7 @@ import { RainbowButton } from "./RainbowButton";
 import { Link as ScrollLink } from 'react-scroll';
 
 export default function Herosection() {
-    return <div className=" w-full flex justify-center items-center py-6 pt-36 dark:bg-black ">
+    return <div className=" w-full flex justify-center items-center py-6  dark:bg-black ">
             <div className=" w-2/3 max-sm:w-full flex flex-col items-center ">
 
         <div className=" h-24 w-24 rounded-full overflow-hidden mb-6">

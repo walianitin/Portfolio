@@ -22,38 +22,38 @@ const educationData: EducationItem[] = [
 ];
 
 const EducationCard = () => (
-  <div className="max-w-2xl mx-auto p-4">
-    <h2 className="text-3xl text-center font-bold mb-6">Education</h2>
+  <div className="max-w-2xl mx-auto p-4  ">
+    <h2 className="text-4xl text-center font-bold mb-6">Education</h2>
     
-    <div className="grid gap-4">
+    <div className=" flex flex-row bg-red-600 justify-center items-centre  ">
       {educationData.map((edu, index) => (
         <MagicCard 
           key={index}
           gradientSize={200}
           gradientColor='neutral'
           gradientOpacity={0.15}
-          className='w-full bg-neutral-600 rounded-sm flex items-center p-4 gap-4 hover:shadow-md transition-all'
-        >
-          <Image 
+          className=' rounded-sm flex flex-row justify-center  p-4 gap-4 hover:shadow-md transition-all'
+        >          
+          <div className="flex-1 min-w-0">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
+              <h3 className="text-lg font-bold truncate">{edu.institution}</h3>
+              <span className="text-neutral-900 text-xs whitespace-nowrap pl-20 ">{edu.duration}</span>
+
+           <div className="flex gap-2 text-sm mt-1 text-neutral-900">
+              <span>{edu.degree}</span>
+              <span className="text-neutral-400">|</span>
+              <span className=" truncate">{edu.department}</span>
+            </div>
+          </div>
+            </div>
+                <Image 
             src={edu.logo} 
             alt={edu.institution} 
             width={40} 
             height={40} 
             className="rounded-sm object-contain"
           />
-          
-          <div className="flex-1 min-w-0">
-            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
-              <h3 className="text-lg font-bold truncate">{edu.institution}</h3>
-              <span className="text-neutral-300 text-xs whitespace-nowrap">{edu.duration}</span>
-            </div>
-            
-            <div className="flex gap-2 text-sm mt-1">
-              <span>{edu.degree}</span>
-              <span className="text-neutral-400">|</span>
-              <span className="text-neutral-400 truncate">{edu.department}</span>
-            </div>
-          </div>
+        
         </MagicCard>
       ))}
     </div>
