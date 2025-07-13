@@ -10,7 +10,7 @@ export default function Herosection() {
     return <div className=" w-full flex justify-center items-center py-6  dark:bg-black mt-10 ">
             <div className=" w-2/3 max-sm:w-full flex flex-col items-center ">
 
-        <div className=" ">
+        <div >
            <Image src={"/logo.png"} height={300 } width={300} alt='logo' className='bg-red-600 rounded-full cursor-pointer '></Image>
             <a href="https://x.com/walia_niti37420" className="rounded-full text-xs"><FaTwitter></FaTwitter></a>
         </div>
