@@ -1,12 +1,9 @@
 'use client'
 
 import { MagicCard } from '@/components/magicui/magic-card'
-import { ShineBorder } from '@/components/magicui/shine-border'
-import { useDarkMode } from '@/hooks/useDarkMode'
 
-import { bricolage_grotesque, inter } from '@/lib/fonts'
-import { ButtonIcon, GitHubLogoIcon, GlobeIcon } from '@radix-ui/react-icons'
-import { Badge, Link } from '@radix-ui/themes'
+import {  GitHubLogoIcon} from '@radix-ui/react-icons'
+
 import Image from 'next/image'
 import { MdOnlinePrediction } from "react-icons/md";
 
@@ -31,12 +28,12 @@ const ProjectCard = (props: Project) => {
                 <p className=' text-sm '>{props.description}</p>
                 <div className="m-3 ">
                      {props.techStack.map((name, idx) => (
-                         <button  className="backdrop-blur-xl hover:bg-neutral-300  bg-transparent rounded-sm p-2 text-xs border m-1 "key={idx}>{name}</button>
+                         <button  className="bg-gray-100 px-3 py-1 rounded shadow text-sm font-small mr-2 mb-2 inline-block transition-colors duration-300 hover:bg-blue-200 "key={idx}>{name}</button>
                         ))}
                 </div>
-                <div className=' flex flex-grow   text- text-white gap-2 items-center  '>
-                       <a href={props.link} className='bg-black shadow-cyan-400 rounded-sm w-fit h-full'> <MdOnlinePrediction></MdOnlinePrediction></a>
-                       <a href={props.source} className='bg-black shadow-cyan-400 rounded-sm h-auto'> <GitHubLogoIcon></GitHubLogoIcon></a>
+                <div className=' flex flex-grow   text-2xl gap-4 items-center '>
+                       <a href={props.link} className=' shadow-cyan-400 rounded-sm '> <MdOnlinePrediction></MdOnlinePrediction></a>
+                       <a href={props.source} className=' shadow-cyan-400 rounded-sm '> <GitHubLogoIcon></GitHubLogoIcon></a>
                 </div>
         </MagicCard>
     )

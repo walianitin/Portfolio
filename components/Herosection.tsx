@@ -1,7 +1,7 @@
 "use client";
 
 import  Avatar  from "@/components/Avatar";
-import { bricolage_grotesque, inter } from "@/lib/fonts";
+import { inter } from "@/lib/fonts";
 import Link from "next/link";
 import { RainbowButton } from "./RainbowButton";
 import { Link as ScrollLink } from 'react-scroll';

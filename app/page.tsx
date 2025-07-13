@@ -1,15 +1,21 @@
 
 
+import Education from "@/components/Education";
+import Github_contri from "@/components/Github_contri";
 import InitialLandingPage from "@/components/IntialLandingPage";
-import Navbar from "@/components/Navbar";
+
+import Skills from "@/components/skills";
 
 
 
 export default function Page() {
     return (
         <div>
-            <Navbar></Navbar>
+            {/* <Navbar></Navbar> */}
             <InitialLandingPage />
+            <Github_contri></Github_contri>
+            <Skills></Skills>
+            <Education></Education>
         </div>  
     )
 

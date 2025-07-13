@@ -62,7 +62,8 @@ export default function ProjectCardList(){
               
             </div>
         
-                <div className="w-fit  flex flex-col items-center mt-4">
+              {visibleProjects < data.length && (
+                <div className="w-fit flex flex-col items-center mt-4">
                   <button
                     onClick={loadMoreProjects}
                     className="relative bg-black rounded-lg text-sm text-white p-2 cursor-pointer shadow-sm"
@@ -71,6 +72,7 @@ export default function ProjectCardList(){
                   </button>
                   {/* <div className="w-full h-1 mt-2 bg-gradient-to-r from-lime-400 via-lime-600 to-lime-400 rounded-full" /> */}
                 </div>
+              )}
         
               </>
         );
