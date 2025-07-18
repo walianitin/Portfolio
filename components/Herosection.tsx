@@ -22,10 +22,9 @@ export default function Herosection() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaTwitter />
+            <FaTwitter size={16} />
           </a>
         </div>
-
         <div className="text-center">
           <h1 className="font-bold mt-2 whitespace-nowrap max-sm:text-[1.6rem] text-[3rem] tracking-tight">
             Hi, I&apos;m Nitin Walia
@@ -33,10 +32,9 @@ export default function Herosection() {
           <p className={`mt-2 max-sm:mt-5 max-sm:px-3 text-base max-sm:text-sm font-normal tracking-normal leading-6 ${bricolage_grotesque}`}>
             <br />
             22, I break things, learn fast, and make shit happen. Deep into code; anything that pushes the limits. History, curiosity, cricket, and great books shaped me. Still chasing mastery.
-            If you're working on something real, let's talk.
+            If you&apos;re working on something real, let&apos;s talk.
           </p>
         </div>
-
         <motion.div 
           className="mt-8 mb-18"
           whileHover={{ scale: 1.05 }}
