@@ -4,7 +4,7 @@ import InitialLandingPage from "@/components/IntialLandingPage";
 
 
 
-export async function Page() {
+export default function Page() {
     return (
         <>
         <div>
