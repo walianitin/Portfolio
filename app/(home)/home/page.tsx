@@ -10,7 +10,6 @@ export default function Page() {
     return (
         <>
         <div className=" flex flex-col gap-10 m-4" style={{backgroundImage:""}}>
-            {/* <Navbar></Navbar> */}
             <InitialLandingPage />
             <GitHubActivityCalendar username="walianitin"/>
             <Skills></Skills>
