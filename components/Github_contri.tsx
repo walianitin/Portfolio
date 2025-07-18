@@ -11,6 +11,7 @@ interface Activity {
 const GitHubActivityCalendar = ({ username }: { username: string }) => {
  const [contribution, setContribution] = useState<Activity[]>([]);
   const [loading, setIsLoading] = useState<boolean>(true);
+  const [mounted, setMounted] = useState<boolean>(false);
 
   const fetchData = useCallback(async () => {
     try {
@@ -28,12 +29,14 @@ const GitHubActivityCalendar = ({ username }: { username: string }) => {
     fetchData();
   }, [fetchData]);
 
-  if (loading) {
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted || loading) {
     return <div className="flex justify-center mt-10">Loading activity data...</div>;
   }
-const todayDate=new Date();
-const yearAgo= new Date();
-yearAgo.setDate(todayDate.getDate()-365);
+
   return (
       <>
       <div className=' flex flex-row justify-center '>
