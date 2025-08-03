@@ -33,8 +33,8 @@ const data: Project[] = [
     title: "Opensox",
     description: "A platform to discover and find open source repositories for contribution. Explore projects, connect with maintainers, and start contributing to the open source community.",
     techStack: ["Next.js", "Framer Motion", "GitHub API", "Tailwind CSS"],
-    link: "https://flick-ai.fardeen.tech/",
-    source: "https://github.com/Fardeen26/flick-ai",
+    link: "https://github.com/walianitin/opensox",
+    source: "https://github.com/walianitin/opensox",
   },
   {
     logo: '/Blooger.png',
