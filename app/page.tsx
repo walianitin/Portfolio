@@ -1,6 +1,6 @@
 
 import Education from "@/components/Education";
-import GitHubActivityCalendar  from"@/components/Github_contri";
+
 import InitialLandingPage from "@/components/IntialLandingPage";
 import Skills from "@/components/skills";
 
@@ -9,10 +9,9 @@ import Skills from "@/components/skills";
 export default function Page() {
     return (
         <>
-        <div className=" flex flex-col gap-10 m-4" style={{backgroundImage:""}}>
-            {/* <Navbar></Navbar> */}
+        <div className=" flex flex-col gap-10 m-4" >
+
             <InitialLandingPage />
-            <GitHubActivityCalendar username="walianitin"/>
             <Skills></Skills>
             <Education></Education>
         </div>  
