@@ -19,7 +19,7 @@ export default function Navbar() {
             </span>
           </li>
           <li className="hover:text-2xl duration-300 ease-in-out relative group">
-            <Link href="/projects" className="hover:bg-gradient-to-l">
+            <Link href="" className="hover:bg-gradient-to-l">
               <FaCode title="Projects" />
             </Link>
             <span className="absolute left-1/2 -translate-x-1/2 mt-2 px-2 py-1 rounded-sm bg-gray-800 text-white text-xs opacity-0 group-hover:opacity-100 duration-300">

@@ -1,6 +1,5 @@
 
 import Education from "@/components/Education";
-
 import InitialLandingPage from "@/components/IntialLandingPage";
 import Skills from "@/components/skills";
 

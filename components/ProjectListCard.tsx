@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ProjectCard from './ProjectCard';
 
 interface Project {
@@ -48,14 +48,27 @@ const data: Project[] = [
 
 export default function ProjectCardList() {
   const [visibleProjects, setVisibleProjects] = useState(2);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const loadMoreProjects = () => {
     setVisibleProjects((prev) => prev + 6);
   };
 
+  if (!mounted) {
+    return (
+      <div className="w-full flex justify-center items-center py-10">
+        <div className="text-foreground">Loading projects...</div>
+      </div>
+    );
+  }
+
   return (
     <>
-      <h1 className=" text-4xl font-stretch-125% mb-5 "> Proof of Work</h1>
+      <h1 className="text-4xl font-stretch-125% mb-5 text-foreground">Proof of Work</h1>
       <div className="grid grid-cols-2 gap-4 w-[50rem]">
         {data.slice(0, visibleProjects).map((project, index) => (
           <ProjectCard
@@ -74,7 +87,7 @@ export default function ProjectCardList() {
         <div className="w-fit flex flex-col items-center mt-4">
           <button
             onClick={loadMoreProjects}
-            className="relative bg-background text-foreground rounded-lg text-sm dark:bg-black-400 p-2 cursor-pointer shadow-sm m-5 dark:hover:text-gray-400"
+            className="bg-primary text-primary-foreground rounded-lg text-sm p-2 cursor-pointer shadow-sm m-5 hover:bg-primary/90 transition-colors"
           >
             Load More..
           </button>
@@ -83,47 +96,3 @@ export default function ProjectCardList() {
     </>
   );
 }
- 
-
-// export default function ProjectCardList(){
-//  const [visibleProjects, setVisibleProjects] = useState(2);
-
-//   const loadMoreProjects = () => {
-//     setVisibleProjects((prev) => prev + 6);
-//   };
- 
-
-//         return (
-//           <>
-//             <h1 className=" text-4xl font-stretch-125% mb-5 "> Prof of Work</h1>
-//             <div className="grid grid-cols-2 gap-4 w-[50rem]">
-//               {data.slice(0,visibleProjects).map((project, index) => (
-//                 <ProjectCard
-//                 key={index}
-//                 title={project.title}
-//                 description={project.description}
-//                 logo={project.logo}
-//                 link={project.link}
-//                 source={project.source}
-//                 techStack={project.techStack}
-//                 />
-//               ))}
-              
-//             </div>
-        
-//               {visibleProjects < data.length && (
-//                 <div className="w-fit flex flex-col items-center mt-4">
-//                   <button
-//                     onClick={loadMoreProjects}
-//                     className="relative bg-background text-foreground rounded-lg text-sm  dark:bg-black-400 p-2 cursor-pointer shadow-sm m-5 dark:hover:text-gray-400"
-//                   >
-//                     Load More..
-//                   </button>
-//                   {/* <div className="w-full h-1 mt-2 bg-gradient-to-r from-lime-400 via-lime-600 to-lime-400 rounded-full" /> */}
-//                 </div>
-//               )}
-        
-//               </>
-//         );
-//     }
-    
