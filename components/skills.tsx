@@ -59,7 +59,8 @@ const Skills: React.FC = () => (
             {techStack.map((tech) => (
                 <span
                     key={tech}
-                    className="bg-gray-100 px-3 py-1 rounded shadow text-sm font-medium mr-2 mb-2 inline-block transition-colors duration-200 hover:bg-blue-200 "
+                    className="bg-background  text-foreground px-3 py-1 rounded shadow  text-sm font-medium mr-2 mb-2  inline-block transition-colors duration-200 dark:hover:bg-gray-800  
+                    hover:bg-blue-200 dark:hover:text-blue-400"
                 >
                     {tech}
                 </span>

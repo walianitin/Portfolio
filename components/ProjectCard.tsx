@@ -23,7 +23,7 @@ const ProjectCard = (props: Project) => {
                 <p className=' text-sm '>{props.description}</p>
                 <div className="m-3 ">
                      {props.techStack.map((name, idx) => (
-                         <button  className="bg-gray-100 px-3 py-1 rounded shadow text-sm font-small mr-2 mb-2 inline-block transition-colors duration-300 hover:bg-blue-200 "key={idx}>{name}</button>
+                         <button  className="bg-background px-3 py-1 rounded shadow text-sm font-small mr-2 mb-2 inline-block transition-colors duration-300 dark:hover:bg-white-200 dark:text-gray-500 "key={idx}>{name}</button>
                         ))}
                 </div>
                 <div className=' flex flex-grow   text-2xl gap-4 items-center '>

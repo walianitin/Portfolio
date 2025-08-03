@@ -1,14 +1,15 @@
 "use client"
 import { FaHome, FaCode, FaGithub, FaLinkedin, FaTwitter, FaFileAlt } from "react-icons/fa";
 import Link from "next/link";
+import { ModeToggle } from "./Toggle";
 export default function Navbar() {
 
 
   return (
     <>
-    <div className="flex flex-row justify-center items-center sticky top-6">
+    <div className="flex flex-row justify-center items-center sticky top-6 z-20">
       <div className="rounded-md p-4 shadow-sm shadow-foreground opacity-90 bg-blend-color-burn w-fit backdrop-blur-3xl">
-        <ul className="flex gap-10 pl-45 pr-45 text-md">
+        <ul className="flex gap-10 pl-45 pr-45 text-md items-center">
           <li className="hover:text-2xl duration-300 relative group">
               <Link href="/" className="hover:bg-gradient-to-l">
               <FaHome title="Home" />
@@ -27,12 +28,12 @@ export default function Navbar() {
           </li>
           {/* <li className="hover:text-2xl duration-300 relative group">
             <a href="/blog" className="hover:bg-gradient-to-l">
-              <FaBlog title="Blog" />
+            <FaBlog title="Blog" />
             </a>
             <span className="absolute left-1/2 -translate-x-1/2 mt-2 px-2 py-1 rounded-sm bg-gray-800 text-white text-xs opacity-0 group-hover:opacity-100 duration-300">
-              Blog
+            Blog
             </span>
-          </li> */}
+            </li> */}
           <li className="hover:text-2xl duration-300 relative group">
             <a href="https://drive.google.com/uc?export=download&id=1aBZKhXQsjqIAsTI4FC8uDdOoYCpCbpox" download="NITIN_RESUME.pdf" className="hover:bg-gradient-to-l">
   <FaFileAlt title="Resume" />
@@ -65,6 +66,10 @@ export default function Navbar() {
               Twitter
             </span>
           </li>
+            <li> <span className=" flex align-top s ">
+              <ModeToggle  />
+            </span>
+              </li>
         </ul>
       </div>
     </div>

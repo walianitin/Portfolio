@@ -6,7 +6,7 @@ import { FaTwitter } from "react-icons/fa";
 
 export default function Herosection() {
   return (
-    <section className="w-full flex justify-center items-center py-6 dark:bg-black mt-10">
+    <section className="w-full flex justify-center items-center py-6 bg-background mt-10">
       <div className="w-2/3 max-sm:w-full flex flex-col items-center">
         <div className="flex flex-col items-center">
           <Image 
@@ -18,7 +18,7 @@ export default function Herosection() {
           />
           <a 
             href="https://x.com/walia_niti37420" 
-            className="rounded-full text-xs mt-2"
+            className="rounded-full text-xs mt-2 text-foreground hover:text-blue-400 transition-colors"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -26,10 +26,10 @@ export default function Herosection() {
           </a>
         </div>
         <div className="text-center">
-          <h1 className="font-bold mt-2 whitespace-nowrap max-sm:text-[1.6rem] text-[3rem] tracking-tight">
+          <h1 className="font-bold mt-2 whitespace-nowrap max-sm:text-[1.6rem] text-[3rem] tracking-tight text-foreground">
             Hi, I&apos;m Nitin Walia
           </h1>
-          <p className={`mt-2 max-sm:mt-5 max-sm:px-3 text-base max-sm:text-sm font-normal tracking-normal leading-6 ${bricolage_grotesque}`}>
+          <p className={`mt-2 max-sm:mt-5 max-sm:px-3 text-base max-sm:text-sm font-normal tracking-normal leading-6 text-foreground ${bricolage_grotesque}`}>
             <br />
             22, I break things, learn fast, and make shit happen. Deep into code; anything that pushes the limits. History, curiosity, cricket, and great books shaped me. Still chasing mastery.
             If you&apos;re working on something real, let&apos;s talk.
@@ -42,7 +42,7 @@ export default function Herosection() {
         >
           <a 
             href="https://x.com/walia_niti37420" 
-            className="bg-black text-white p-4 rounded-md m-5 inline-block"
+            className="bg-primary text-primary-foreground p-4 rounded-md m-5 inline-block hover:opacity-90 transition-opacity"
             target="_blank"
             rel="noopener noreferrer"
           >
