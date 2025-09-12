@@ -25,7 +25,7 @@ const data: Project[] = [
     title: "Confluence' 24 Nitkkr",
     description: "Confluence Nitkkr is the official website for the Cultural fest of college",
     techStack: ["React", "TypeScript", "framer-motion", "tailwindCss", "NextAuth"],
-    link: "https://www.confluencenitkkr.com/",
+    link: "https://confluence-2k24.vercel.app/",
     source: "https://github.com/confluencenitkkr/Confluence-2k24",
   },
   {
