@@ -38,9 +38,9 @@ const data: Project[] = [
   },
   {
     logo: '/Blooger.png',
-    title: "Blooger",
-    description: "An AI-Powered tool with 200+ users designed to refine your tweets with full customizations and make them stand out—because GPT just doesn't get it.",
-    techStack: ["Next.js", "TypeScript","PostgreSql", "Prisma ORM", "NextAuth", "Tailwind CSS","Auth"],
+    title: "Story Book",
+    description: "A place where you can read and write your imagination. Share stories, discover new worlds, and connect with creative minds.",
+    techStack: ["Next.js", "TypeScript", "PostgreSql", "Prisma ORM", "NextAuth", "Tailwind CSS", "Auth"],
     link: "https://blogger-uqi9.vercel.app/",
     source: "https://github.com/walianitin/blogger",
   },
