@@ -11,7 +11,9 @@ export default function Herosection() {
       <div className="w-2/3 max-sm:w-full flex flex-col items-center relative z-10">
         <div className="flex flex-col items-center">
           <Image 
-            src="/logo.png" 
+            src="/logo.ico"                                         
+  
+  
             height={300}
             width={300}
             alt="logo"
