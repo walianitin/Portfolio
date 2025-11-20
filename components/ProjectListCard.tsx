@@ -12,7 +12,15 @@ interface Project {
 }
 
 const data: Project[] = [
-  {
+  { 
+    logo: '/confluence.svg',
+    title: "Confluence' 25 Nitkkr",
+    description: "Confluence Nitkkr is the official website for the Cultural fest of college",
+    techStack: ["Nextjs", "TypeScript", "framer-motion", "tailwindCss"],
+    link: "https://confluence-dev.vercel.app/",
+    source: "https://github.com/walianitin/Confluence",
+  },
+    {
     logo: '/exchange.svg',
     title: "Exchange Monitor",
     description: "Exchange monitor is a platform to monitor your cryptos live .",
