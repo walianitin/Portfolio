@@ -7,7 +7,7 @@ export default function Navbar() {
 
   return (
     <>
-    <div className="flex flex-row justify-center items-center sticky top-6 z-20">
+    <div className="flex flex-row justify-center items-center sticky top-6 z-20 sm:w-full  ">
       <div className="rounded-md p-4 shadow-sm shadow-foreground opacity-90 bg-blend-color-burn w-fit backdrop-blur-3xl">
         <ul className="flex gap-10 pl-45 pr-45 text-md items-center">
           <li className="hover:text-2xl duration-300 relative group">
