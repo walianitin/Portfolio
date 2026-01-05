@@ -95,6 +95,7 @@ export default function Herosection() {
           </a>
         </motion.div>
       </div>
+      <div id="bottom-of-page"></div>
     </section>
   );
 }

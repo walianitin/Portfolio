@@ -19,7 +19,7 @@ export default function Navbar() {
             </span>
           </li>
           <li className="hover:text-2xl duration-300 ease-in-out relative group">
-            <Link href="" className="hover:bg-gradient-to-l">
+            <Link href="#bottom-of-page" className="hover:bg-gradient-to-l">
               <FaCode title="Projects" />
             </Link>
             <span className="absolute left-1/2 -translate-x-1/2 mt-2 px-2 py-1 rounded-sm bg-gray-800 text-white text-xs opacity-0 group-hover:opacity-100 duration-300">
@@ -35,7 +35,9 @@ export default function Navbar() {
             </span>
             </li> */}
           <li className="hover:text-2xl duration-300 relative group">
-            <a href="https://drive.google.com/uc?export=download&id=113va_DmQVfwJoH0En2AsAXH110XUimft" download="NITIN_NITKKR.pdf" className="hover:bg-gradient-to-l">
+            {/*  */}
+            <a href="https://drive.google.com/uc?export=download&id=1eBpNQ-sIuoXeQQtryQOfJ_qq__Z8lisI
+" download="NITIN_NITKKR.pdf" className="hover:bg-gradient-to-l">
   <FaFileAlt title="Resume" />
 </a>
             <span className="absolute left-1/2 -translate-x-1/2 mt-2 px-2 py-1 rounded-sm bg-gray-800 text-white text-xs opacity-0 group-hover:opacity-100 duration-300">

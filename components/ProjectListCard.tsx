@@ -25,7 +25,7 @@ const data: Project[] = [
     title: "Exchange Monitor",
     description: "Exchange monitor is a platform to monitor your cryptos live .",
     techStack: ["Nextjs", "Tailwind CSS", "Websocket", "Nodemailer", "React Charts", "Node.js", "Backpack API"],
-    link: "https://exchange-frontend-1.vercel.app/",
+    link: "https://exchange-frontend-vercel.vercel.app/markets",
     source: "https://github.com/walianitin/exchange",
   },
   {
