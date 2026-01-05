@@ -19,7 +19,7 @@ const ProjectCard = (props: Project) => {
     return (
         // <button onclick>
 
-        <MagicCard gradientSize={200} gradientColor='grey'gradientOpacity={0.2} className='h-fit  relative group  w-full bg-neutral-600 rounded-sm inset-shadow-neutral flex flex-row gap-2 p-4   bg-grey-500  cursor-pointer ' >
+        <MagicCard gradientSize={200} gradientColor='grey'gradientOpacity={0.2} className='h-fit  relative group  w-full bg-neutral-600 rounded-sm inset-shadow-neutral flex  flex-row gap-2 p-4   bg-grey-500  cursor-pointer ' >
             {/* <div id="></div> */}
             <Image src={props.logo} alt={props.title} width={64} height={64} className="rounded-sm mb-2" />
                 <h1>{props.title}</h1>

@@ -77,7 +77,7 @@ export default function ProjectCardList() {
   return (
     <>
       <h1 className="text-4xl font-stretch-125% mb-5 text-foreground">Proof of Work</h1>
-      <div className="grid grid-cols-2 gap-4 w-[50rem]">
+      <div className="grid lg:grid-cols-2 gap-4 lg:w-[50rem] grid-cols-1 w-[20rem]">
         {data.slice(0, visibleProjects).map((project, index) => (
           <ProjectCard
             key={index}
