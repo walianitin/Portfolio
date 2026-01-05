@@ -7,7 +7,7 @@ import { FaTwitter } from "react-icons/fa";
 export default function Herosection() {
   return (
     <section className="w-full flex justify-center items-center py-6 bg-background mt-10 relative">
-      {/* Removed large horizon light effect at top */}
+      {/* Removed large horizon light effect at top asdfsdf*/}
       <div className="w-2/3 max-sm:w-full flex flex-col items-center relative z-10">
         <div className="flex flex-col items-center">
           <Image 
