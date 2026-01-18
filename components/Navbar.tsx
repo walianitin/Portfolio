@@ -36,7 +36,7 @@ export default function Navbar() {
             </li> */}
           <li className="hover:text-2xl duration-300 relative group">
             {/*  */}
-            <a href="https://drive.google.com/uc?export=download&id=1eBpNQ-sIuoXeQQtryQOfJ_qq__Z8lisI
+            <a href="https://drive.google.com/uc?export=download&id=1PyhIfhVCJN4tb7pKxhTDybNXh528jw3Q
 " download="NITIN_NITKKR.pdf" className="hover:bg-gradient-to-l">
   <FaFileAlt title="Resume" />
 </a>
